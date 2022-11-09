@@ -1,13 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background-color: #022d42;
+  background: #e0d0c1;
+  font-family: "Barlow", sans-serif;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
 }
 
 .calculator-grid {
+  font-family: "Barlow", sans-serif;
   display: grid;
   justify-content: center;
   margin-top: 2rem;
@@ -33,6 +43,7 @@ body {
 }
 
 .output {
+  border-radius: 10px 10px 0 0;
   grid-column: 1 / -1;
   background-color: rgba(0, 0, 0, 0.75);
   display: flex;
@@ -52,4 +63,9 @@ body {
 .output .current-operand {
   color: aliceblue;
   font-size: 2.5rem;
+}
+
+.eval-btn {
+  border-radius: 0 0 10px 0 !important;
+  background-color: #ff8c42 !important;
 }
